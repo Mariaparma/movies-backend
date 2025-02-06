@@ -11,7 +11,7 @@ const router = {
     addMovie: (req, res) => {
         try {
             const { title, director, duration, plays } = req.body;
-            if(!title || !director ||duration !) {
+            if(!title || !director || !duration ) {
                 throw new Error('Preencha todos os campos!')
             }
             const movie = new Movie (title, director, duration, plays)
@@ -75,8 +75,3 @@ const router = {
 
 module.exports = router;
 
-
-
-
-
-}
