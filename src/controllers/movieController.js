@@ -22,7 +22,7 @@ const router = {
         }
     },
 
-    getAllSongs: (req, res) => {
+    getAllMovies: (req, res) => {
         try {
             const movies = lista.getAllMovies();
             res.status(200).json(movies);
@@ -62,7 +62,7 @@ const router = {
         }
     },
 
-    getTop10Movie: (req, res) => {
+    getTop10Movies: (req, res) => {
         try {
             const movies = lista.getTop10Movies();
             res.status(200).json(Movies);
